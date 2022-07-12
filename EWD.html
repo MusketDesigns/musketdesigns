@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Web Design</title>
+    <link rel="stylesheet" href="EWD.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css">
+    <script src="./EWD.js"></script>
+    <meta property="og:image" content="https://darius010.github.io/Darius-Portfolio/" />
+</head>
+<body>
+
+
+  <!--                  ----------------------------------      NAVBAR      --------------------------------------------                     -->
+ 
+  <div>
+    <ul>
+        
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+</div>
+
+
+<!-------------------------------------------------------          Header          ------------------------------------------------------------>
+
+   <section class="header">
+
+    <div class="navbar">
+       <a href="#"><img src="./Logo.png" alt="" id="logo">
+        <div class="overlay">
+
+        </div>
+      </a> 
+    </div>
+
+    <div class="page-scroll text-center">
+        <a href="#about" class="btn btn-circle">
+            <i class="fa fa-angle-down  animated"></i>
+        </a>
+      </div>
+      <div class="bottom"></div>
+   </section>
+
+   <!---------------------                                          ABOUT                           ------------------------------------------->
+
+
+   <!-- <section class="about"> -->
+    <div id="about" class="about">
+        <div class="portSite">
+          <div class="portCont">
+            <h2>Portfolio Sites & <br>Resume's</h2>
+            <h3><Span>Stand OUT</Span> from the crowd with a custom made portfolio site and resume that suits <Span>YOU!</Span></h3>
+          </div>
+        </div>
+        <div class="busSite">
+          <div class="busCont">
+            <h2>Business Sites</h2>
+            <h3>From <Span>Start-Ups</Span> to Corporate <Span> Giants</Span>, grow your online presence with us!</h3>
+          </div>
+        </div>
+        <!-- <div class="ecomSite">
+          <div class="busCont">
+            <h2>eCommerce Sites</h2>
+          </div>
+        </div> -->
+    </div>
+   
+   <!-- </section> -->
+
+      <!---------------------                                       PROJECTS                         ------------------------------------------->
+
+   <section class="projects" id="projects">
+    <h2> Recent Projects</h2>
+    <div  class="projCont">
+        <div class="proj1"><a href="https://darius010.github.io/Darius-Portfolio/"><img src="./site1.jpg" alt=""></a></div>
+        <div class="proj2"><a href="https://darius010.github.io/unitune/"><img src="./unitune.jpg" alt=""></a></div>
+        <div class="proj3"><a href="https://darius010.github.io/Honey/"><img src="./honey.jpg"/></a></div>
+    </div>
+    <!-- <div class="page-scroll text-center">
+        <a href="#contact" class="btn btn-circle">
+            <i class="fa fa-angle-down  animated"></i>
+        </a>
+      </div> -->
+   </section>
+
+         <!---------------------                                       Contact Us                         ------------------------------------------->
+
+        <section class="contact">
+            <header class="conHead">
+                <h2><a id="contact">Contact Us</a></h2>
+            </header>
+            <div class="conBod">
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="300" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=50%20alexandra%20street%20florida&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                   <br>
+                    <style>.mapouter{position:relative;text-align:right;height:30vh;width:30vw;}</style>
+                    <a href="https://www.embedgooglemap.net"></a>
+                    
+                </div>
+            </div>
+            <div class="container">
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="SA">South Africa</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="EU">Europe</option>
+                    <option value="Other">Other</option>
+                    
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+            </div>
+          
+        </section>
+
+        <!------------                                  FOOTER                      --------------->
+        <section class="footer">
+            <div>
+                <h2><a id="footer">Powered by Elite Designs</a></h2>
+            </div>
+        </section>
+
+        <button id="myBtn" title="Go to top"><a href="#">Top</a></button>
+       
+</body>
+<script>
+    //Get the button:
+mybutton = document.getElementById("myBtn");
+
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+    
+
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+//   document.body.scrollTop = 0; // For Safari
+//   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+// }
+</script>
+</html>
